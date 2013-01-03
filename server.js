@@ -2,6 +2,7 @@
 var connect = require('connect')
     , express = require('express')
     , io = require('socket.io')
+    , fs = require('fs')
     , port = (process.env.PORT || 8081);
 
 //Setup Express
@@ -58,16 +59,56 @@ io.sockets.on('connection', function(socket){
 /////// ADD ALL YOUR ROUTES HERE  /////////
 
 server.get('/', function(req,res){
-  res.render('index.jade', {
-    locals : { 
-              title : 'Your Page Title'
-             ,description: 'Your Page Description'
-             ,author: 'Your Name'
-             ,analyticssiteid: 'XXXXXXX' 
-            }
-  });
-});
+    /*res.render('index.jade', {
+     locals : {
+     title : 'Your Page Title'
+     ,description: 'Your Page Description'
+     ,author: 'Your Name'
+     ,analyticssiteid: 'XXXXXXX'
+     }
+     });
+     return false;*/
+    var dust = require('./lib/dust/dust.js');
 
+//    var filePath = ;//using dirname to get absolute path, as it is looking in node bin folder
+//    exports.index = function(req, res){
+//    	  res.render('index', { title: 'Express' });
+//    	};
+    //    console.log(filePath, dust);
+
+    require(__dirname + "/views/dust_compiled/layout.js");
+    require(__dirname + "/views/dust_compiled/index.js");
+//    fs.readFile(filePath, 'utf-8', function (err, data) {
+//    	if (err) {
+//            console.log(err);
+//            res.end();
+//    }
+//    else {
+//        var fn = dust.compileFn(data.toString(), "index")
+//        fn({ name: "Bala" }, function (err, out) {
+//            res.end(out);
+//        })
+    var dust_baseObj = require("./static/js/dust_base.js");
+    var index_base = dust_baseObj.dust_base();
+
+    dust.stream("index", index_base.push({ name: "Sarav" })).on('data', function(out){
+        res.end(out);
+    }).on('end', function(data){
+//			return (this.response);
+        }).on('error', function(err){
+            //alert(err);
+        });
+});
+server.get('/new', function(req,res){
+    res.render('new.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+        }
+    });
+});
 
 //A Route for Creating a 500 Error (Useful to keep around)
 server.get('/500', function(req, res){
@@ -86,4 +127,4 @@ function NotFound(msg){
 }
 
 
-console.log('Listening on http://0.0.0.0:' + port );
+console.log('Listening on http://127.0.0.1:' + port );
