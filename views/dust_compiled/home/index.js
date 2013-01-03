@@ -1,0 +1,1 @@
+var dust = require('../../lib/dust/dust.js');(function(){dust.register("index",body_0);function body_0(chk,ctx){return chk.write("Hi ").reference(ctx.get("name"),ctx,"h");}return body_0;})();

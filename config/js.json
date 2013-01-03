@@ -1,0 +1,3 @@
+{
+    "lib" : ["base.js", "../../lib/dust/dust.js"]
+}
