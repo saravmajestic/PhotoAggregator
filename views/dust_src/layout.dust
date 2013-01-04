@@ -13,8 +13,8 @@
     <meta name="msapplication-TileImage" content="http://passets-ec.pinterest.com/images/logo_trans_144x144.png" />
     <link rel="icon" href="http://passets-lt.pinterest.com/images/favicon.png" type="image/x-icon" />
     <link rel="apple-touch-icon-precomposed" href="http://passets-ec.pinterest.com/images/ipad_touch_icon.png" />
-    <link rel="stylesheet" href="{#loadCss name="base" /}" type="text/css" media="all"/>
-    <script type="text/javascript" src="{#loadJs name="lib" /}"></script>
+    {#loadCss name="base" /}
+    {#loadJs name="lib" /}
 
     <meta property="fb:app_id" content="274266067164"/>
     <meta property="og:site_name" content="Pinterest"/>

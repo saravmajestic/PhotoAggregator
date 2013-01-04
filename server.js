@@ -3,7 +3,8 @@ var connect = require('connect')
     , express = require('express')
     , io = require('socket.io')
     , fs = require('fs')
-    , port = (process.env.PORT || 8081);
+    , port = (process.env.PORT || 8081),
+    mongoose = require('mongoose');;
 
 //Setup Express
 var server = express.createServer();
@@ -92,22 +93,75 @@ server.get('/', function(req,res){
     var index_base = dust_baseObj.dust_base();
 
     dust.stream("index", index_base.push({ name: "Sarav" })).on('data', function(out){
-        res.end(out);
+        Schema = mongoose.Schema;
+        db = mongoose.connect('mongodb://localhost:27017/test');
+
+        var authorSchema = new Schema({
+            author : String,
+            note : String
+        });
+
+        mongoose.model('author', authorSchema);
+
+        var Note = mongoose.model('author');
+
+        var newNote = new Note();
+        newNote.author = "Dan Brown";
+        newNote.note = "The Lost Symbol";
+
+        var callback = function(isSuccess){
+            console.log("into callback");
+            if (isSuccess) {
+                res.write(JSON.stringify({"success" : true}));
+            }
+            else {
+                res.write(JSON.stringify({"success" : false}));
+            }
+//            res.end("");
+        }
+
+        //Adding data to mongoDB
+        newNote.save(function(err,arg2) {
+            console.log("into save");
+            if (err) {
+//                util.log('FATAL ' + err);
+                callback(err);
+            }
+            else {
+                callback(true);
+            }
+        });
+
+        //Retriving data from MongoDB
+        Note.find({}, function(err,doc){
+            if (err) {
+                res.write(JSON.stringify({"success" : false, "err" : (err)}));
+            }
+            else {
+                res.write("<br/>");
+                res.write(JSON.stringify(doc));
+            }
+            res.end();
+        });
+
+        res.write(out);
     }).on('end', function(data){
 //			return (this.response);
         }).on('error', function(err){
             //alert(err);
         });
 });
-server.get('/new', function(req,res){
-    res.render('new.jade', {
+server.get('/getdata', function(req,res){
+    /*res.render('new.jade', {
         locals : {
             title : 'Your Page Title'
             ,description: 'Your Page Description'
             ,author: 'Your Name'
             ,analyticssiteid: 'XXXXXXX'
         }
-    });
+    });*/
+
+
 });
 
 //A Route for Creating a 500 Error (Useful to keep around)

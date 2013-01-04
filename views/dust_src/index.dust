@@ -2,4 +2,8 @@
 {<content}
         this is middle content.
         Hi {name}
+
+        <div>
+            <a href="javascript:;">Get Facebook data</a>
+        </div>
 {/content}
