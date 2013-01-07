@@ -1,3 +1,4 @@
 {
-    "lib" : ["sencha-touch.js","dust.js", "base.js"]
+    "lib" : ["sencha-touch-all.js","dust.js", "base.js"],
+    "home" : ["home/photoupload.js"]
 }

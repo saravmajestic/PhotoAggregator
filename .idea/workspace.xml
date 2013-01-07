@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3b1f81f3-4e74-43dd-beec-49da87e17a12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compile_dust.js" afterPath="$PROJECT_DIR$/compile_dust.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/js.json" afterPath="$PROJECT_DIR$/config/js.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/dust_base.js" afterPath="$PROJECT_DIR$/static/js/dust_base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dust_src/index.dust" afterPath="$PROJECT_DIR$/views/dust_src/index.dust" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dust_src/layout.dust" afterPath="$PROJECT_DIR$/views/dust_src/layout.dust" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dust_compiled/home/index.js" afterPath="$PROJECT_DIR$/views/dust_compiled/home/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dust_compiled/index.js" afterPath="$PROJECT_DIR$/views/dust_compiled/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dust_compiled/layout.js" afterPath="$PROJECT_DIR$/views/dust_compiled/layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dust_src/home/index.dust" afterPath="$PROJECT_DIR$/views/dust_src/home/index.dust" />
     </list>
     <ignored path="PhotoAggregator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,46 +32,35 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="19" selection-start="4354" selection-end="4357" vertical-scroll-proportion="0.0">
+            <state line="163" column="52" selection-start="4898" selection-end="4985" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/init.json">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/dust_compiled/home/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="1" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+            <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dust_base.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/js/dust_base.js">
+      <file leaf-file-name="Task_Split" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/Task_Split">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.6454389">
+            <state line="12" column="32" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dust.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/dust.js">
+      <file leaf-file-name="index.dust" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/dust_src/home/index.dust">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="13" column="19" selection-start="383" selection-end="383" vertical-scroll-proportion="0.35008976">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sencha-touch.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/sencha-touch.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -77,25 +68,16 @@
       <file leaf-file-name="layout.dust" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/dust_src/layout.dust">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="28" selection-start="786" selection-end="786" vertical-scroll-proportion="-5.0833335">
+            <state line="27" column="11" selection-start="1026" selection-end="1029" vertical-scroll-proportion="-9.833333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.dust" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/dust_src/index.dust">
+      <file leaf-file-name="photoupload.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/home/photoupload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="-5.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="js.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/js.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="41" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+            <state line="19" column="38" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,29 +96,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/css/style.css" />
-        <option value="$PROJECT_DIR$/static/js/min/lib.js" />
-        <option value="$PROJECT_DIR$/static/css/min/base.css" />
-        <option value="$PROJECT_DIR$/static/js/base.js" />
-        <option value="$PROJECT_DIR$/static/css/base.css" />
         <option value="$PROJECT_DIR$/minifyJSCSS.js" />
         <option value="$PROJECT_DIR$/static/css/reset.css" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/config/css.json" />
         <option value="$PROJECT_DIR$/views/dust_src/index.dust" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/static/js/sencha-touch.js" />
-        <option value="$PROJECT_DIR$/config/js.json" />
         <option value="$PROJECT_DIR$/views/dust_src/layout.dust" />
         <option value="$PROJECT_DIR$/static/js/dust_base.js" />
         <option value="$PROJECT_DIR$/config/init.json" />
+        <option value="$PROJECT_DIR$/docs/Task_Split" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/views/dust_compiled/home/index.js" />
+        <option value="$PROJECT_DIR$/compile_dust.js" />
+        <option value="$PROJECT_DIR$/config/js.json" />
+        <option value="$PROJECT_DIR$/static/js/home/photoupload.js" />
+        <option value="$PROJECT_DIR$/views/dust_src/home/index.dust" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="50" />
+    <option name="x" value="49" />
     <option name="y" value="22" />
-    <option name="width" value="1630" />
+    <option name="width" value="1631" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -226,7 +208,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dust_compiled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhotoAggregator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhotoAggregator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhotoAggregator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhotoAggregator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhotoAggregator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhotoAggregator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,8 +283,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -355,17 +387,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="22" width="1630" height="1028" extended-state="6" />
-    <editor active="false" />
+    <frame x="49" y="22" width="1631" height="1028" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14810206" sideWeight="0.6703418" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14800996" sideWeight="0.6703418" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39911798" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.49782202" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296582" sideWeight="0.49782202" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296582" sideWeight="0.49782202" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -427,60 +459,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/base.css">
+    <entry file="file://$PROJECT_DIR$/config/init.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="0" selection-end="24" vertical-scroll-proportion="0.057915058" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="503" column="1" selection-start="9066" selection-end="9066" vertical-scroll-proportion="0.0">
+        <state line="2" column="1" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="299" column="1" selection-start="5660" selection-end="5660" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/css.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="7" selection-end="11" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/node-minify/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="43" selection-end="44" vertical-scroll-proportion="0.034602076">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/node-minify/Readme.md">
+    <entry file="file://$PROJECT_DIR$/static/js/sencha-touch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="19" selection-start="4354" selection-end="4357" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -492,46 +484,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/sencha-touch.js">
+    <entry file="file://$PROJECT_DIR$/static/js/dust_base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="25" column="0" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.535284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Task_Split">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="32" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dust_compiled/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compile_dust.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="42" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.43889844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="285" column="31" selection-start="5602" selection-end="5602" vertical-scroll-proportion="2.180723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="52" selection-start="4898" selection-end="4985" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dust_src/index.dust">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="-5.625">
+        <state line="2" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="0.053859964">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dust_src/layout.dust">
+    <entry file="file://$PROJECT_DIR$/static/js/sencha-touch-all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="28" selection-start="786" selection-end="786" vertical-scroll-proportion="-5.0833335">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/js.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="41" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+        <state line="3" column="1" selection-start="98" selection-end="98" vertical-scroll-proportion="0.07745267">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/init.json">
+    <entry file="file://$PROJECT_DIR$/views/dust_src/layout.dust">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+        <state line="27" column="11" selection-start="1026" selection-end="1029" vertical-scroll-proportion="-9.833333">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/dust_base.js">
+    <entry file="file://$PROJECT_DIR$/views/dust_compiled/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.6454389">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/home/photoupload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="38" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dust_src/home/index.dust">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="383" selection-end="383" vertical-scroll-proportion="0.35008976">
           <folding />
         </state>
       </provider>

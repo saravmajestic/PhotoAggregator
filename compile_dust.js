@@ -33,7 +33,7 @@ var walk = function(dir, done) {
 		            		
 		            		var destFoldName = destFileName.replace(fileName +".js", "");//Dest folder - to check whether the folder exists or not
 							if(fs.existsSync(destFoldName)){
-                                var dustPath = "var dust = require('../../lib/dust/dust.js');"; //Hack to remove error for dust when loading the files
+                                var dustPath = "var dust = require(ROOT_PATH + '/lib/dust/dust.js');"; //Hack to remove error for dust when loading the files
                                 writeFile(destFileName, dustPath + compliedContent, file);
 							}else{
 								fs.mkdir(destFoldName, 0777, function (err) {

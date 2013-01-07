@@ -5,16 +5,17 @@ var connect = require('connect')
     , fs = require('fs')
     , port = (process.env.PORT || 8081),
     mongoose = require('mongoose');;
+global.ROOT_PATH = __dirname;
 
 //Setup Express
 var server = express.createServer();
 server.configure(function(){
-    server.set('views', __dirname + '/views');
+    server.set('views', ROOT_PATH + '/views');
     server.set('view options', { layout: false });
     server.use(connect.bodyParser());
     server.use(express.cookieParser());
     server.use(express.session({ secret: "shhhhhhhhh!"}));
-    server.use(connect.static(__dirname + '/static'));
+    server.use(connect.static(ROOT_PATH + '/static'));
     server.use(server.router);
 });
 
@@ -77,8 +78,8 @@ server.get('/', function(req,res){
 //    	};
     //    console.log(filePath, dust);
 
-    require(__dirname + "/views/dust_compiled/layout.js");
-    require(__dirname + "/views/dust_compiled/index.js");
+    require(ROOT_PATH + "/views/dust_compiled/layout.js");
+    require(ROOT_PATH + "/views/dust_compiled/index.js");
 //    fs.readFile(filePath, 'utf-8', function (err, data) {
 //    	if (err) {
 //            console.log(err);
@@ -151,16 +152,18 @@ server.get('/', function(req,res){
             //alert(err);
         });
 });
-server.get('/getdata', function(req,res){
-    /*res.render('new.jade', {
-        locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });*/
+server.get('/home', function(req,res){
+    var dust = require(ROOT_PATH + '/lib/dust/dust.js');
 
+    require(ROOT_PATH + "/views/dust_compiled/layout.js");
+    require(ROOT_PATH + "/views/dust_compiled/home/index.js");
+
+    var dust_baseObj = require("./static/js/dust_base.js");
+    var index_base = dust_baseObj.dust_base();
+
+    dust.stream("index", index_base.push({ name: "Sarav" })).on('data', function(out){
+        res.end(out);
+    });
 
 });
 
