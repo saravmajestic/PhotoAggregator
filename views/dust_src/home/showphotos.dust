@@ -1,0 +1,12 @@
+{>layout/}
+{<content}
+
+{#albums}
+{#title}<a href="{ctx}showalbum?id={#gphoto$id}{$t}{/gphoto$id}">{$t}{/title}</a><br/>
+
+{/albums}
+
+{#photos}
+<img src="{content.src}" width="100"/>
+{/photos}
+{/content}

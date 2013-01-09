@@ -1,6 +1,6 @@
 {>layout/}
-
 {<content}
+
 <script>
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -16,6 +16,11 @@
 <input type="file" name="source" accept="image/*;capture=camera">
     <input type="button" id="submitBtn" value="Post"/>
 </form>
-        <iframe name="frame" id="frame"></iframe>
+<form target="myframe" id="pic_photoform" name="uploadphoto" method="post" action="upload" enctype="multipart/form-data">
+    <input type="hidden" name="provider" value="P">
+    <input type="file" name="source" accept="image/*;capture=camera">
+    <input type="submit" id="pic_submitBtn" value="Post"/>
+</form>
+<iframe name="myframe" id="myframe"></iframe>
         {#loadJs name="home" /}
 {/content}
